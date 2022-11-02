@@ -1,0 +1,49 @@
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    max-width: 680px;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    gap: 2rem;
+
+    div {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin-top: 2rem;
+      flex-direction: column-reverse;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  &__content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__content-img {
+    img {
+      width: 100%;
+
+      @media screen and (max-width: 600px) {
+        max-width: 240px;
+      }
+    }
+  }
+}

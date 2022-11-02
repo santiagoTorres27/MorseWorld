@@ -1,0 +1,169 @@
+.history {
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  min-height: 100vh;
+  align-content: center;
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  &--bg2 {
+    background-color: var(--color-bg-2);
+  }
+
+  //   - Text
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--center {
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+      width: 70%;
+      z-index: 1;
+    }
+
+    div {
+      position: absolute;
+      width: 80%;
+      height: 70%;
+      bottom: -10%;
+      left: 0;
+      background-color: var(--color-primary);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem;
+
+      p {
+        font-size: 1rem;
+        color: white;
+      }
+    }
+
+    // - Design 2
+    &--2 {
+      img {
+        width: 60%;
+        margin-top: 1rem;
+      }
+
+      div {
+        width: 50%;
+        top: -10%;
+        height: 180px;
+        left: 0;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+// - History uses
+.history-uses {
+  padding: 0 10%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+
+  &__grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      filter: invert(12%) sepia(11%) saturate(896%) hue-rotate(190deg)
+        brightness(100%) contrast(85%);
+    }
+  }
+}
+
+// - History sources
+.history-sources {
+  background-color: var(--color-bg-2);
+  padding: 6rem 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+  &__list {
+    width: 60%;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    ul li {
+      list-style: none;
+      padding: 1rem 0rem;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: var(--color-primary);
+    }
+  }
+
+  &__link {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 10rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
