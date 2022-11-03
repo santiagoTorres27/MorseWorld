@@ -1,0 +1,45 @@
+.letters {
+  min-height: 100vh;
+
+  // - Information
+  &__information {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 2rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+
+  // - Indications
+  &__indications {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+
+  &__indication-item {
+    background-color: var(--color-bg-2);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

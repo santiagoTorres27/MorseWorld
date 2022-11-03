@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <div className="container">
+      <div>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/history" element={<HistoryPage />} />
